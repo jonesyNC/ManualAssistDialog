@@ -4,7 +4,7 @@ It is not always desirable or cost effective to automate all areas of an applica
 
 When you encounter one of these areas this code will allow you to prompt the automation test runner to perform manual steps.
 
-The idea behind this stand-alone application is that your automation can do all the setup necessary for a test,
+The idea behind this stand-alone application is that your test automation can do all the setup necessary for a test,
 and then display a GUI dialog prompting the person running the test automation to manually perform steps via the application GUI.
 
 The manual tester will then click on one of several buttons to indicate what should happen next.
