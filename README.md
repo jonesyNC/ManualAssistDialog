@@ -1,11 +1,12 @@
 # ManualAssistDialog
 
-It is not always desirable or cost effective to automate all areas of an application under test. 
+The idea here is to provide a simple way to prompt a manual tester to perform manual test steps during an automated test run.
+The test automation can do all the setup necessary for a test, and then display a GUI dialog prompting the person
+running the test automation to manually perform steps via the application GUI, and then click on one of several buttons to indicate what should happen next.
+The test automation can then continue executing, performing additional actions such as verifications or setting the test status based on the returned status code.
 
-This stand alone Java application can be called from your test automation code and will allow you to prompt the user to perform manual test steps.
-
-The idea behind this stand-alone application is that your test automation can do all the setup necessary for a test,
-and then display a GUI dialog prompting the person running the test automation to manually perform steps via the application GUI.
+This self executing Java application can be called from your test automation code and will allow you to prompt the user to perform manual test steps. 
+Send a string to the application with the steps you want displayed in the text area.
 
 The manual tester will then click on one of several buttons to indicate what should happen next.
 
@@ -19,4 +20,10 @@ Upon receiving the return code your test automation code can perform additional 
 
 Because this is a Java application it will work on all platforms that support Java.
 
-Required: Open JDK 11
+JDK 21 LTS
+
+## Example Usage
+```java -jar MaDialog.jar "Test steps String would go here" ```
+
+Example Screen Shot:
+![MaDialog.java](resources/DialogExample.png)
